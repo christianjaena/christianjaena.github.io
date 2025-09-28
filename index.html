@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Christian Jaena | Software Engineer</title>
+    <title>Christian Jaena | Home</title>
 
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <!-- Google font -->
@@ -11,171 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      :root {
-        --bg: #ffffff;
-        --text: #0f172a;
-        --muted: #6b7280;
-      }
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      /* Layout */
-      .wrap {
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-
-      header {
-        padding: 28px 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 980px;
-        margin: 0 auto;
-        width: 100%;
-      }
-
-      /* Simple brand */
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-      .initials {
-        width: 56px;
-        height: 56px;
-        display: inline-grid;
-        place-items: center;
-        border-radius: 10px;
-        background: #111827;
-        color: white;
-        font-weight: 800;
-        font-size: 20px;
-        letter-spacing: 0.6px;
-      }
-      .nav {
-        display: flex;
-        gap: 18px;
-        align-items: center;
-        font-weight: 500;
-      }
-      .nav a {
-        color: var(--muted);
-        text-decoration: none;
-        font-size: 14px;
-      }
-      .nav a:hover {
-        color: var(--text);
-        text-decoration: underline;
-      }
-
-      main {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 48px 24px;
-      }
-
-      .hero {
-        max-width: 920px;
-        width: 100%;
-        text-align: center;
-      }
-      .name {
-        font-size: 54px;
-        line-height: 1;
-        font-weight: 800;
-        margin: 0;
-        letter-spacing: -1px;
-      }
-      .subtitle {
-        margin-top: 14px;
-        color: var(--muted);
-        font-weight: 400;
-        font-size: 18px;
-      }
-
-      .social {
-        margin-top: 22px;
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-      }
-      .social a {
-        text-decoration: none;
-        font-size: 14px;
-        color: var(--muted);
-        border: 1px solid #e6e6e6;
-        padding: 8px 12px;
-        border-radius: 8px;
-        display: inline-block;
-      }
-      .social a:hover {
-        border-color: #d1d5db;
-        color: var(--text);
-      }
-
-      .profile-image {
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto 16px auto;
-      }
-
-      footer {
-        padding: 20px 24px;
-        text-align: center;
-        color: var(--muted);
-        font-size: 13px;
-        border-top: 1px solid #f3f4f6;
-      }
-
-      /* Responsive */
-      @media (max-width: 520px) {
-        .name {
-          font-size: 36px;
-        }
-        .initials {
-          width: 48px;
-          height: 48px;
-          font-size: 18px;
-        }
-        header {
-          padding: 18px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrap">
       <main>
         <section class="hero" role="main">
           <img
+            onclick="window.location.href='about.html'"
             src="assets/profile.jpg"
             alt="Profile Placeholder"
             class="profile-image"
             style="background: #e5e7eb"
             onerror="this.style.display='none'"
           />
-          <h1 class="name">Christian Jaena</h1>
-          <p class="subtitle">
-            A coder fueled by coffee and milk tea
-          </p>
+          <h1 class="name" onclick="window.location.href='about.html'">
+            Christian Jaena
+          </h1>
+          <p class="subtitle">A coder fueled by coffee and milk tea</p>
 
           <div class="social" aria-label="Social links">
             <a
