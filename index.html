@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Christian Jaena</title>
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #0f172a;
+        --muted: #6b7280;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Layout */
+      .wrap {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        padding: 28px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 980px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      /* Simple brand */
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .initials {
+        width: 56px;
+        height: 56px;
+        display: inline-grid;
+        place-items: center;
+        border-radius: 10px;
+        background: #111827;
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        letter-spacing: 0.6px;
+      }
+      .nav {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        font-weight: 500;
+      }
+      .nav a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .nav a:hover {
+        color: var(--text);
+        text-decoration: underline;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px;
+      }
+
+      .hero {
+        max-width: 920px;
+        width: 100%;
+        text-align: center;
+      }
+      .name {
+        font-size: 54px;
+        line-height: 1;
+        font-weight: 800;
+        margin: 0;
+        letter-spacing: -1px;
+      }
+      .subtitle {
+        margin-top: 14px;
+        color: var(--muted);
+        font-weight: 400;
+        font-size: 18px;
+      }
+
+      .social {
+        margin-top: 22px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+      }
+      .social a {
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--muted);
+        border: 1px solid #e6e6e6;
+        padding: 8px 12px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+      .social a:hover {
+        border-color: #d1d5db;
+        color: var(--text);
+      }
+
+      footer {
+        padding: 20px 24px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 13px;
+        border-top: 1px solid #f3f4f6;
+      }
+
+      /* Responsive */
+      @media (max-width: 520px) {
+        .name {
+          font-size: 36px;
+        }
+        .initials {
+          width: 48px;
+          height: 48px;
+          font-size: 18px;
+        }
+        header {
+          padding: 18px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="initials">CJ</div>
+          <div>
+            <div style="font-weight: 700">Christian Jaena</div>
+            <div style="font-size: 12px; color: var(--muted); margin-top: 2px">
+              Backend Engineer
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#notes">Notes</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" role="main">
+          <h1 class="name">Christian Jaena</h1>
+          <p class="subtitle">
+            Backend Engineer — Java &amp; Spring Boot. Building reliable
+            microservices and clean APIs.
+          </p>
+
+          <div class="social" aria-label="Social links">
+            <!-- Replace these links if you want to point elsewhere -->
+            <a
+              href="https://www.linkedin.com/in/christian-jaena-45490218b"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a href="#projects">Projects</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>Christian Jaena © <span id="yr"></span></footer>
+    </div>
+
+    <script>
+      // Fill copyright year
+      document.getElementById("yr").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
