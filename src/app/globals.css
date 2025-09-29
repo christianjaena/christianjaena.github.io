@@ -88,10 +88,7 @@ main {
   margin: 0;
   letter-spacing: -1px;
 }
-.name:hover {
-  cursor: pointer;
-  color: #374151;
-}
+
 .subtitle {
   margin-top: 14px;
   color: var(--muted);
