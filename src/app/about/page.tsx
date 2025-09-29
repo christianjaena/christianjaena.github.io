@@ -2,6 +2,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ImageRedirect from "@/components/ImageRedirect";
 
+export const metadata = {
+  title: "About"
+};
+
 export default function About() {
   return (
     <>
@@ -19,19 +23,24 @@ export default function About() {
                 className="profile-image"
               />
               <h1 className="name">About Me</h1>
+              <br />
               <div className="subtitle">
+                <p>Hey there!👋I’m Christian Jaena.</p>
+                <br />
                 <p>
-                  👋 Hey there! I’m Christian Jaena, a Software Engineer
-                  passionate about crafting clean, efficient, and scalable
-                  solutions. My toolbox revolves around Java, Spring Boot, and
-                  Microservices, where I thrive in building systems that not
-                  only work but work well. ⚙️
+                  A Software Engineer passionate about crafting clean,
+                  efficient, and scalable solutions. My main toolbox revolves
+                  around Java, Spring Boot, and Microservices, where I thrive in
+                  building systems that not only work but work well.⚙️ (I do
+                  some React on the side too!)
                 </p>
+                <br />
                 <p>
                   My long-term goal? To level up into Software Architect, where
                   I can design solutions that are as elegant as they are
                   impactful. 🏗️
                 </p>
+                <br />
                 <p>
                   But coding for me isn’t just a career—it’s also a playground.
                   I love experimenting with projects that range from practical
@@ -39,11 +48,13 @@ export default function About() {
                   should strike the perfect balance between functionality and
                   creativity.
                 </p>
+                <br />
                 <p>
                   Outside the IDE, I’m either tuning into podcasts (Diary of a
                   CEO is well recommended), checking out the latest tech and
                   gaming trends, or playing ball games with friends. 😂
                 </p>
+                <br />
                 <p>
                   So, whether it’s a deep dive into backend design or just
                   sharing a laugh, I’m always down to connect, learn, and build
@@ -57,5 +68,4 @@ export default function About() {
       </div>
     </>
   );
-};
-
+}
