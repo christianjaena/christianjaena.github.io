@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import ImageRedirect from "@/components/ImageRedirect";
 import LinkedIn from "@/components/Linkedin";
 
-export const Home = () => {
+export default function Home() {
   return (
     <>
       <Header title="Home" />
@@ -37,4 +37,3 @@ export const Home = () => {
   );
 };
 
-export default Home;

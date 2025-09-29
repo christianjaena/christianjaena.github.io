@@ -2,7 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ImageRedirect from "@/components/ImageRedirect";
 
-export const About = () => {
+export default function About() {
   return (
     <>
       <Header title="About" />
@@ -59,4 +59,3 @@ export const About = () => {
   );
 };
 
-export default About;
