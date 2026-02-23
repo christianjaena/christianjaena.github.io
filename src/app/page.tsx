@@ -21,7 +21,7 @@ export default function Home() {
               className="profile-image"
             />
             <h1 className="name">Christian Jaena</h1>
-            <p className="subtitle">A coder fueled by coffee and milk tea</p>
+            <p className="subtitle">A coder fueled by coffee and boba</p>
 
             <div className="social" aria-label="Social links">
               <LinkedIn />
